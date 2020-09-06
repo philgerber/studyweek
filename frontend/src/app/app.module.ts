@@ -12,6 +12,8 @@ import {MatListModule} from '@angular/material/list';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import {ScrollingModule} from '@angular/cdk/scrolling';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

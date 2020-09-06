@@ -1,0 +1,16 @@
+.list-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+}
+
+.list {
+  width: 20em;
+  margin-left: 2em;
+}
+
+.info {
+  flex: 0.8;
+  margin-left: 20em;
+  margin-top: 1em;
+}

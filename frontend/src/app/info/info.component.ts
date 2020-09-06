@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Shop} from "../models/Shop";
 
 @Component({
   selector: 'app-info',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+
+  @Input()
+  receivedParentMessage: Shop;
 
   constructor() { }
 

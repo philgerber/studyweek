@@ -1,3 +1,18 @@
-<app-nav></app-nav>
-<app-list></app-list>
-<app-info></app-info>
+<div class="components">
+  <div class="nav">
+    <app-nav></app-nav>
+  </div>
+
+  <div class="list-info">
+    <div class="list">
+      <app-list (shopZeitFest)="zeitChanged($event)"></app-list>
+    </div>
+    <div class="info">
+      <app-info [receivedParentMessage]="selectedShopTime"></app-info>
+    </div>
+
+  </div>
+
+
+</div>
+

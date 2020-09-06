@@ -12,7 +12,7 @@ export class ShopService {
   }
 
   getAll(): Observable<Shop[]> {
-    return this.http.get<Shop[]>('http://localhost:8080/api/shops');
+    return this.http.get<Shop[]>('http://localhost:4200/api/shops');
   }
 
 }

@@ -14,18 +14,6 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "fahrplan-app:build",
-            "proxyConfig": "src/proxy.conf.json"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "fahrplan-app:build:production"
-            }
-          }
-        },
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
@@ -73,6 +61,18 @@
                   "maximumError": "10kb"
                 }
               ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "fahrplan-app:build",
+            "proxyConfig": "proxy.conf.json"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "fahrplan:build:production"
             }
           }
         },
@@ -126,7 +126,6 @@
           }
         }
       }
-    }
-  },
+    }},
   "defaultProject": "fahrplan-app"
 }
