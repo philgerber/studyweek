@@ -12,10 +12,4 @@ services:
       - .:/docker-entrypoint-initdb.d/
     ports:
       - 5432:5432
-    networks:
-      - pgnetwork
     restart: unless-stopped
-
-networks:
-  pgnetwork:
-    driver: bridge
